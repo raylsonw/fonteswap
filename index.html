@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Fancy Fonts Generator</title>
+        <meta name="title" content="Fancy Fonts Generator">
+
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="theme-color" content="#30d5c8">
+	</head>
+	
+	<body>
+		<div class="main-container">
+			<div class="container text-align-center sans-serif">
+				<h1 aria-label="Fancy Fonts Bot">𝕱𝖔𝖓𝖙𝖊𝖘 𝕭𝖚𝖓𝖎𝖙𝖆</h1>
+				<p>Ce vai descobrir quando testar, confia</p>
+			
+				<textarea id="input-text-area" rows="4" cols="60" disabled placeholder="Digita aqui po"></textarea><br>
+				
+				<div class="flex-container">
+					<label class="text-align-center">Escolhe a Fontezinha
+						<select id="font-select" name="fontlist" title="Font Selection">
+						</select>
+					</label>
+					<br>
+					
+					<label class="text-align-center">Deixa estilozin
+						<select id="font-style-select" name="font-styles" title="Style Selection">
+							<option value="shift-normal" selected>None</option>
+							<option value="shift-upper">Uppercase</option>
+							<option value="shift-lower">Lowercase</option>
+							<option value="shift-alternate">Alternate Case</option>
+							<option value="spaced">Spaced</option>
+							<option value="reverse">Reversed</option>
+						</select>
+					</label>
+				</div>
+			</div>
+			
+			<div class="container text-align-center text-size-large">
+				<p title="Click to copy" id="output-text" class="break-all"></p>
+			</div>
+			
+			<div class="container">
+				<details>
+					<summary id="view-all-conversions">Ve as fonte tudo</summary>
+					<ul id="output-list" class="break-all">
+					</ul>
+				</details>
+			</div>
+		</div>
+
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+        <script defer>document.body.innerHTML = twemoji.parse(document.body.innerHTML);</script>
+		<script defer src="js/converter.js"></script>
+	</body>
+</html>
